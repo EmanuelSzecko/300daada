@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Demon Slayer{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="/tanjiro">Tanjiro</a></li>
+                <li><a href="/personagens">Personagens</a></li>
+                <li><a href="/hashiras">Hashiras</a></li>
+                <li><a href="/viloes">Vilões</a></li>
+                <li><a href="/tecnicas">Técnicas</a></li>
+                <li><a href="/curiosidades">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Site criado por fãs de Demon Slayer</p>
+        <p>Siga-nos: 🐦 Twitter | 📸 Instagram | 🎥 YouTube</p>
+    </footer>
+</body>
+</html>

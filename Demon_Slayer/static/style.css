@@ -1,0 +1,129 @@
+/* Fonte especial para o título */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+:root {
+    --cor-principal: #8b0000;
+    --cor-secundaria: #f9f4e8;
+    --cor-fundo: #1c1c1c;
+    --cor-hover: #cc3333;
+    --cor-card: #2e2e2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    line-height: 1.6;
+}
+
+header.hero {
+    background: url('/static/img/hero_tanjiro.jpg') no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+}
+
+header .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.8em;
+    font-family: 'Cinzel', serif;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.navbar {
+    background-color: var(--cor-principal);
+    padding: 5px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--cor-hover);
+}
+
+.container {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cards */
+
+.card {
+    background-color: var(--cor-card);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #ff5555;
+}
+
+/* Footer */
+
+footer {
+    background-color: #111;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--cor-principal);
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+}

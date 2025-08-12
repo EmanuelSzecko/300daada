@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}Vilões e Luas Superiores{% endblock %}
+
+{% block content %}
+<h2>Vilões e Luas Superiores</h2>
+<p>Os vilões de Demon Slayer são seres sombrios, liderados por Muzan Kibutsuji. Entre eles, as <strong>Luas Superiores</strong> representam os demônios mais poderosos do grupo dos Doze Kizuki.</p>
+
+<!-- Muzan Kibutsuji -->
+<div class="card">
+    <img src="{{ url_for('static', filename='img/muzan.jpg') }}" alt="Muzan Kibutsuji">
+    <h3>Muzan Kibutsuji</h3>
+    <p>O primeiro demônio e o criador de todos os outros. Inteligente, cruel e manipulador, Muzan é o maior inimigo da Demon Slayer Corps. Busca a imortalidade absoluta e teme o poder do Sol.</p>
+</div>
+
+<!-- Lua Superior 1: Kokushibo -->
+<div class="card">
+    <img src="{{ url_for('static', filename='img/kokushibo.jpg') }}" alt="Kokushibo">
+    <h3>Kokushibo – Lua Superior 1</h3>
+    <p>Antigo espadachim e irmão de Yoriichi Tsugikuni, o criador da Respiração do Sol. Sua força é imensa, e ele usa técnicas com a espada e sangue demoníaco.</p>
+</div>
+
+<!-- Lua Superior 2: Doma -->
+<div class="card">
+    <img src="{{ url_for('static', filename='img/doma.jpg') }}" alt="Doma">
+    <h3>Doma – Lua Superior 2</h3>
+    <p>Carismático e psicopata. Líder de uma seita religiosa falsa. Usa a Respiração do Gelo Demoníaco e consome suas vítimas com sorriso no rosto.</p>
+</div>
+
+<!-- Lua Superior 3: Akaza -->
+<div class="card">
+    <img src="{{ url_for('static', filename='img/akaza.jpg') }}" alt="Akaza">
+    <h3>Akaza – Lua Superior 3</h3>
+    <p>Feroz lutador de artes marciais. Matou Rengoku em uma das batalhas mais intensas da série. Apesar de cruel, respeita guerreiros fortes.</p>
+</div>
+
+<!-- Lua Superior 4: Hantengu -->
+<div class="card">
+    <img src="{{ url_for('static', filename='img/hantengu.jpg') }}" alt="Hantengu">
+    <h3>Hantengu – Lua Superior 4</h3>
+    <p>Covarde e fraco à primeira vista, mas pode se dividir em múltiplas personalidades com poderes diferentes, como Raiva e Prazer. Um inimigo enganoso e perigoso.</p>
+</div>
+
+<!-- Lua Superior 5: Gyokko -->
+<div class="card">
+    <img src="{{ url_for('static', filename='img/gyokko.jpg') }}" alt="Gyokko">
+    <h3>Gyokko – Lua Superior 5</h3>
+    <p>Com corpo grotesco e aparência de jarro, Gyokko usa ataques baseados em invocações de peixes e manipulação de água demoníaca.</p>
+</div>
+
+<!-- Lua Superior 6: Daki e Gyutaro -->
+<div class="card">
+    <img src="{{ url_for('static', filename='img/daki_gyutaro.jpg') }}" alt="Daki e Gyutaro">
+    <h3>Daki e Gyutaro – Lua Superior 6</h3>
+    <p>Irmãos demoníacos que compartilham o mesmo posto. Atuaram juntos no Distrito do Entretenimento. Seus ataques são combinados e letais.</p>
+</div>
+
+{% endblock %}

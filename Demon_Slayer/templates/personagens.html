@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Personagens Principais{% endblock %}
+
+{% block content %}
+<h2>Companheiros de Jornada</h2>
+
+<div class="card">
+    <img src="{{ url_for('static', filename='img/nezuko.jpg') }}" alt="Nezuko Kamado">
+    <h3>Nezuko Kamado</h3>
+    <p>Irmã de Tanjiro transformada em demônio. Mesmo assim, ela protege humanos e mantém o controle sobre sua fome.</p>
+</div>
+
+<div class="card">
+    <img src="{{ url_for('static', filename='img/zenitsu.jpg') }}" alt="Zenitsu Agatsuma">
+    <h3>Zenitsu Agatsuma</h3>
+    <p>Covarde e barulhento, mas incrivelmente rápido e poderoso quando inconsciente. Usa a Respiração do Trovão.</p>
+</div>
+
+<div class="card">
+    <img src="{{ url_for('static', filename='img/inosuke.jpg') }}" alt="Inosuke Hashibira">
+    <h3>Inosuke Hashibira</h3>
+    <p>Espadachim selvagem com máscara de javali. Usa a Respiração da Besta e tem sentidos aguçados.</p>
+</div>
+{% endblock %}

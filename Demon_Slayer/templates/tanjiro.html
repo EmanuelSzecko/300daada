@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Tanjiro Kamado{% endblock %}
+
+{% block content %}
+<h2>Tanjiro Kamado</h2>
+
+<div class="card">
+    <img src="{{ url_for('static', filename='img/tanjiro_card.jpg') }}" alt="Tanjiro Kamado">
+    <h3>Quem é Tanjiro?</h3>
+    <p>Tanjiro Kamado é um dos personagens mais inspiradores dos animes. Gentil, determinado e extremamente leal à família, ele se tornou um Caçador de Demônios após o massacre de sua família por Muzan Kibutsuji.</p>
+    <p>Com o objetivo de salvar sua irmã Nezuko, que virou demônio, Tanjiro enfrenta duras batalhas dominando técnicas como a Respiração da Água e o lendário Hinokami Kagura.</p>
+
+    <ul>
+        <li><strong>Estilo de luta:</strong> Respiração da Água, Hinokami Kagura</li>
+        <li><strong>Personalidade:</strong> Compassivo, focado, persistente</li>
+        <li><strong>Curiosidade:</strong> Seu olfato é tão aguçado que consegue detectar intenções e emoções</li>
+    </ul>
+
+    <button onclick="mostrarFrase()">Ver frase icônica</button>
+    <p id="fraseTanjiro" style="display:none; margin-top: 10px; font-style: italic;">
+        "Mesmo que não tenha talento, mesmo que esteja fraco, tenho que trabalhar duro!"
+    </p>
+</div>
+{% endblock %}
